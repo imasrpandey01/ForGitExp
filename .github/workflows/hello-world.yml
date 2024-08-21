@@ -3,7 +3,7 @@ name: Hello World Workflow
 on:
   push:
     branches:
-      - main # This is the branch to monitor; change if your branch is different
+      - dev # This is the branch to monitor; change if your branch is different
 
 jobs:
   hello-world-job:
