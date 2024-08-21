@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - main # This is the branch to monitor; change if your branch is different
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest # This specifies the operating system for the job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # This action checks out the repository code
+
+      - name: Echo Hello World
+        run: echo "Hello, World!" # This command prints "Hello, World!"
